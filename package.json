@@ -40,7 +40,7 @@
     "wrangler": "^4.33.0"
   },
   "scripts": {
-    "build": "npx mocha build",
+    "build": "vite build",
     "dev": "mocha dev",
     "preview": "mocha preview",
     "check": "tsc && mocha build && wrangler deploy --dry-run",
