@@ -39,10 +39,11 @@
     "knip": "^5.51.0"
   },
   "scripts": {
-    "build": "vite build",
+    "build": "mocha build",
+    "dev": "mocha dev",
+    "preview": "mocha preview",
+    "check": "tsc && mocha build && wrangler deploy --dry-run",
     "cf-typegen": "wrangler types",
-    "check": "tsc && vite build && wrangler deploy --dry-run",
-    "dev": "vite",
     "knip": "knip",
     "lint": "eslint ."
   }
